@@ -1,10 +1,13 @@
 #ifndef ROBOTCOMPONENT_H
 #define ROBOTCOMPONENT_H
 
+#include "EventListener.h"
+#include "Robot.h"
+
 /**
  * Represents a modular piece of the robot.
  */
-class RobotComponent
+class RobotComponent : public EventListener<RobotEvent>
 {
 public:
 	/**
